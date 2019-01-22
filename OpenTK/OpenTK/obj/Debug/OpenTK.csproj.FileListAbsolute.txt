@@ -1,0 +1,11 @@
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\bin\Debug\OpenTK.exe.config
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\bin\Debug\OpenTK.exe
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\bin\Debug\OpenTK.pdb
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\bin\Debug\OpenTK.dll
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\bin\Debug\OpenTK.xml
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\bin\Debug\OpenTK.dll.config
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\obj\Debug\OpenTK.csprojAssemblyReference.cache
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\obj\Debug\OpenTK.csproj.CoreCompileInputs.cache
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\obj\Debug\OpenTK.csproj.CopyComplete
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\obj\Debug\OpenTK.exe
+F:\Documents\Programs\Lanugages\C#\OpenTK\OpenTK\obj\Debug\OpenTK.pdb
