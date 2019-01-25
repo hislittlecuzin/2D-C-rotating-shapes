@@ -1,0 +1,11 @@
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\obj\Debug\TKMapTool.csprojAssemblyReference.cache
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\obj\Debug\TKMapTool.csproj.CoreCompileInputs.cache
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\bin\Debug\TKMapTool.exe.config
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\bin\Debug\TKMapTool.exe
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\bin\Debug\TKMapTool.pdb
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\bin\Debug\OpenTK.dll
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\bin\Debug\OpenTK.pdb
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\bin\Debug\OpenTK.xml
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\obj\Debug\TKMapTool.csproj.CopyComplete
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\obj\Debug\TKMapTool.exe
+C:\Users\hislittlecuzin\Documents\Magnum\TKMapTool\TKMapTool\obj\Debug\TKMapTool.pdb
