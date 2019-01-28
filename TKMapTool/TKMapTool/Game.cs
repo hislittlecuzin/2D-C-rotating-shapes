@@ -14,13 +14,26 @@ namespace TKMapTool
     class Game : GameWindow
     {
         int vertexBufferObject;
+        int elementBufferObject;
         int VertexArrayObject;
         Shader shader;
 
         float[] vertices = {
-            -0.5f, -0.5f, 0.0f, //Bottom-left vertex
-             0.5f, -0.5f, 0.0f, //Bottom-right vertex
-             0.0f,  0.5f, 0.0f  //Top vertex
+             0.5f,  0.5f, 0.0f,  // top right
+             0.5f, -0.5f, 0.0f,  // bottom right
+            -0.5f, -0.5f, 0.0f,  // bottom left
+            -0.5f,  0.5f, 0.0f   // top left
+        };
+
+        float[] texCoords = {
+            0.0f, 0.0f,
+            1.0f, 0.0f,
+            0.5f, 1.0f
+        };
+
+        uint[] indices = {  // note that we start from 0!
+            0, 1, 3,   // first triangle
+            1, 2, 3    // second triangle
         };
 
         public Game(int width, int height, string title) 
@@ -38,18 +51,26 @@ namespace TKMapTool
         }
 
         protected override void OnLoad(EventArgs e) {
-            //GL.ClearColor(0, 0, 0, 1);
+            GL.ClearColor(0, 0, 0, 1);
             vertexBufferObject = GL.GenBuffer();
             
+            //New 3 lines
+            
+
             shader = new Shader("F:/Documents/Programs/Lanugages/GLSL-Shaders/shader.vert", "F:/Documents/Programs/Lanugages/GLSL-Shaders/shader.frag");
 
             VertexArrayObject = GL.GenVertexArray();
 
+           
             GL.BindVertexArray(VertexArrayObject);
             GL.BindBuffer(BufferTarget.ArrayBuffer, vertexBufferObject);
             GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
+
+            elementBufferObject = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer, elementBufferObject);
+            GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Length * sizeof(uint), indices, BufferUsageHint.StaticDraw);
 
             base.OnLoad(e);
         }
@@ -58,6 +79,7 @@ namespace TKMapTool
             GL.Clear(ClearBufferMask.ColorBufferBit);
 
             DrawTriangle();
+            
 
             Context.SwapBuffers();
 
@@ -67,7 +89,8 @@ namespace TKMapTool
         void DrawTriangle() {
             shader.Use();
             GL.BindVertexArray(VertexArrayObject);
-            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+            GL.DrawElements(PrimitiveType.Triangles, indices.Length, DrawElementsType.UnsignedInt, 0);
+            //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
         }
 
 
